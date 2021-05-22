@@ -3,4 +3,10 @@ html, body, #root{
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+
+  color: aliceblue;
+
+  background: rgb(14,11,22);
+  background: linear-gradient(0deg, rgba(14,11,22,1) 21%, rgba(162,57,202,1) 53%, rgba(71,23,246,1) 100%);
 }

@@ -3,14 +3,18 @@ import { ButtonProps } from './interfaces';
 import { Container } from './styles';
 
 
-const Button: React.FC<ButtonProps> = ({color, name, onClick}) =>{
+const Button: React.FC<ButtonProps> = ({color, name, onClick, bg, style, selected}) =>{
   return (
   <Container 
-    color={color} 
+    style={style}
+    color={color}
+    bg={bg} 
+    selected={selected}
     {...(onClick?{ onClick: () => onClick() }:{})}
   >
     {name}
-  </Container>)
+  </Container>
+  )
 }
 
 export default Button;
