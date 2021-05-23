@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
               slidesToScroll={1}
             >
               {data.map(value => (
-                <Content style={{ width: width - 100, height}}>
+                <Content height={height-120} width={width} className="ContentCarousel">
                   <ImageContainer>
                     <img src={value.img} alt="alt" />
                   </ImageContainer>

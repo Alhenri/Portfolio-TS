@@ -53,7 +53,7 @@ export const ListMenu = styled.div`
 
 export const GridContent = styled.div`
   display: grid;
-  grid-template-rows: 60px auto 30px;
+  grid-template-rows: 60px auto 45px;
 `;
 
 export const TitleArea = styled.div`

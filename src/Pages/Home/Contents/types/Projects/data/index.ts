@@ -3,6 +3,18 @@ import snct_img from './snct2019.jpeg';
 
 const data = [
   {
+    title: 'E-recycle',
+    img: 'https://media.giphy.com/media/GQwRL4GkTwW2OGfwWH/giphy.gif',
+    lines: ['Projeto inspirando na primeira NLW mas que estou criando no momento. O site está em desenvolvimento, mas a ideia principal é que ele seja uma interface onde será possivel cadastrar/encontrar pontos de coleta próximo a você']
+  },
+  {
+    title: 'Inspect App',
+    img: 'https://media.giphy.com/media/7BpsSNeQFu0lmMK8t6/giphy.gif',
+    lines: [
+      'Esse projeto foi criado a fim de testar a minha capacidade de criação de interfaces no processo seletivo de estágio da Tracking Trade usando o TypeScript (meu primeiro contato com a linguagem), ReactJS, styled-components, React Hooks, e Context-API.',
+    ],
+  },
+  {
     title: 'Weather app',
     img: 'https://media.giphy.com/media/k0JPEO1JY2kxxAMxeq/giphy.gif',
     lines: [
