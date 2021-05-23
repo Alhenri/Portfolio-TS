@@ -11,6 +11,7 @@ export const Container = styled.div`
   justify-content: space-around;
   padding: 15px 25px;
   height: 100%;
+  width: 100%;
 `;
 
 export const Card = styled.div<CardProps>`
@@ -24,7 +25,7 @@ export const Card = styled.div<CardProps>`
   color: #333333;
   background-color: ${({ backGroundColor }) =>
     backGroundColor || css`rgba(255, 255,255, 0.1)`};
-  border-radius: 35px;
+  border-radius: 25px;
 
   img{
     max-height: 100%;

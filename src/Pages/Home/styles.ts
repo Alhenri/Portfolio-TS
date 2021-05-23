@@ -11,6 +11,7 @@ export const Menu = styled.div`
   padding: 25px 10px;
   display: grid;
   grid-template-rows: 30px auto;
+  background-color: rgba(255, 255, 255, 0.1);
 `
 
 export const TitleMenu = styled.div`
@@ -32,6 +33,9 @@ export const TitleArea = styled.div`
   font-size: 32px;
 `
 
-export const ContentArea = styled.div``
+export const ContentArea = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 export const FooterArea = styled.div``
