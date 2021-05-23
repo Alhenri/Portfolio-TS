@@ -5,7 +5,8 @@ import { Container } from './styles';
 
 const Button: React.FC<ButtonProps> = ({color, name, onClick, bg, style, selected}) =>{
   return (
-  <Container 
+  <Container
+    className="Button"
     style={style}
     color={color}
     bg={bg} 

@@ -15,11 +15,13 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: grid !important;
-  grid-template-rows: 300px auto;
+  grid-template-rows: 500px auto;
   grid-row-gap: 25px;
   justify-content: center;
 
   img {
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 80%;
   }
@@ -36,4 +38,8 @@ export const ImageContainer = styled.div`
 export const TextContainer = styled.div`
   width: 100%;
   max-width: 800px;
+
+  p, h2 { 
+    margin: 15px;
+  }
 `

@@ -4,7 +4,7 @@ import data from './data'
 
 const Qualification: React.FC = () => {
   return (
-    <Container>
+    <Container className="Qualification">
       {data.map(value => (
         <Card backGroundColor={value.backGroundColor}>
           <div>

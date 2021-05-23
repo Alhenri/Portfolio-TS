@@ -20,6 +20,7 @@ export const Container = styled.button<ContainerProps>`
   border-radius: 15px;
   transition: 0.2s;
   width: 100%;
+  cursor: pointer;
 
   :hover {
     transform: scale(1.1);
