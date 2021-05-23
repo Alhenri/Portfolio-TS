@@ -11,6 +11,19 @@ export const Container = styled.div`
 
 export const TextArea = styled.div`
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    max-width: 800px;
+  }
 `;
 
-export const ImageArea = styled.div``
+export const ImageArea = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 300px;
+  }
+`;

@@ -15,6 +15,7 @@ export const Menu = styled.div`
 
 export const TitleMenu = styled.div`
   text-align: center;
+  font-size: 24px;
 `
 
 export const ListMenu = styled.div`
@@ -27,7 +28,9 @@ export const GridContent = styled.div`
   grid-template-rows: 60px auto 30px;
 `
 
-export const TitleArea = styled.div``
+export const TitleArea = styled.div`
+  font-size: 32px;
+`
 
 export const ContentArea = styled.div``
 

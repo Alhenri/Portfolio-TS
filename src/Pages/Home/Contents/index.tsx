@@ -1,15 +1,18 @@
 import { ContentProps } from './interfaces'
 import AboutMe from './types/AboutMe'
+import Qualification from './types/Qualification'
+import Projects from './types/Projects'
+
 
 function getContent(type: string): ContentProps {
   switch(type){
     case 'projects':
-      return {title: 'Projetos', content: <div>Projetos</div>}
+      return {title: 'Projetos', content: <Projects />}
     case 'qualification':
-      return {title: 'Qualificação', content: <div>Qualificação</div>}
+      return {title: 'Qualificação', content: <Qualification />}
     case 'about_me':
     default:
-      return {title: 'Sobre mim', content: <AboutMe/>}
+      return {title: 'Sobre mim', content: <AboutMe />}
       
     }
 }
