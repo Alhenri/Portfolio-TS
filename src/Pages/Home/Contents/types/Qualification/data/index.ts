@@ -1,20 +1,16 @@
-import ifpe_img from './ifpe-logo.png';
-import ufpe_img from './ufpe-logo.png';
+export interface DataInterface {
+  backGroundColor: string;
+  img: string;
+  lines: string[];
+}
 
-const data = [
-  {
-    backGroundColor: '#B7EB7F',
-    img: ifpe_img,
-    lines: [
-      '♦ Ensino médio (2016 - 2019)',
-      '♦ Técnico em eletrônica (2016 - 2019)',
-    ],
-  },
-  {
-    backGroundColor: '#FC7F7F',
-    img: ufpe_img,
-    lines: ['♦ Engenharia da computação (2020 - Agora)'],
-  },
-];
+async function getData(): Promise<DataInterface[]> {
+  console.log(process.env.REACT_APP_BASE_URL);
+  const base_url = process.env.REACT_APP_MOCK === 'true'
+    ? 'http://localhost:3333'
+    : process.env.REACT_APP_BASE_URL;
+  const data = await fetch(`${base_url}/qualification`);
+  return data.json();
+}
 
-export default data;
+export default getData;
