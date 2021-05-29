@@ -5,7 +5,11 @@ export interface DataInterface {
 }
 
 async function getData(): Promise<DataInterface[]> {
-  const data = await fetch('http://localhost:3333/qualification');
+  console.log(process.env.REACT_APP_BASE_URL);
+  const base_url = process.env.REACT_APP_MOCK === 'true'
+    ? 'http://localhost:3333'
+    : process.env.REACT_APP_BASE_URL;
+  const data = await fetch(`${base_url}/qualification`);
   return data.json();
 }
 

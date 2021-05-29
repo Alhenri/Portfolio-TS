@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import AutoSizer from "react-virtualized-auto-sizer";
 
+import Loading from "../../../../../components/Loading";
 import IconLink from "../../../../../components/IconLink";
 import {
   Container,
@@ -27,7 +28,7 @@ const Projects: React.FC = () => {
     requestData();
   }, []);
 
-  if(loading) return <div>Loading</div>
+  if (loading) return <Loading />;
 
   return (
     <Container>

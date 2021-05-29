@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Card } from "./styles";
 import getData, { DataInterface } from "./data";
+import Loading from "../../../../../components/Loading";
 
 const Qualification: React.FC = () => {
   const [data, setData] = useState<DataInterface[]>([]);
@@ -17,7 +18,7 @@ const Qualification: React.FC = () => {
     requestData();
   }, []);
 
-  if (loading) return <div>Loading</div>;
+  if (loading) return <Loading />;
 
   return (
     <Container className="Qualification">

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AutoSizer from "react-virtualized-auto-sizer";
 
+import Loading from "../../../../../components/Loading";
 import { Container, TextArea, ImageArea } from "./styles";
 import getData, { DataType } from "./data";
 
@@ -19,7 +20,7 @@ const AboutMe: React.FC = () => {
     requestData();
   }, []);
 
-  if (loading) return <div>Loading</div>;
+  if (loading) return <Loading/>;
 
   return (
     <Container>
