@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Card } from "./styles";
-import data from "./data";
+import getData, { DataInterface } from "./data";
 
 const Qualification: React.FC = () => {
+  const [data, setData] = useState<DataInterface[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    const requestData = async () => {
+      setLoading(true);
+      const response = await getData();
+      setLoading(false);
+      setData(response);
+    };
+
+    requestData();
+  }, []);
+
+  if (loading) return <div>Loading</div>;
+
   return (
     <Container className="Qualification">
       {data.map((value) => (

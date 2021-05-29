@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import AutoSizer from "react-virtualized-auto-sizer";
 
@@ -10,9 +10,25 @@ import {
   TextContainer,
   LinksContainer,
 } from "./styles";
-import data from "./data";
+import getData, { DataInterface } from "./data";
 
 const Projects: React.FC = () => {
+  const [data, setData] = useState<DataInterface[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    const requestData = async () => {
+      setLoading(true);
+      const response = await getData();
+      setLoading(false);
+      setData(response);
+    };
+
+    requestData();
+  }, []);
+
+  if(loading) return <div>Loading</div>
+
   return (
     <Container>
       <AutoSizer>
