@@ -26,9 +26,12 @@ export const Card = styled.div<CardProps>`
   background-color: ${({ backGroundColor }) =>
     backGroundColor || css`rgba(255, 255,255, 0.1)`};
   border-radius: 25px;
-
   img{
     max-height: 100%;
     max-width: 100%;
+  }
+
+  @media (max-width: 500px){
+    grid-template-rows: 100px auto;
   }
 `;

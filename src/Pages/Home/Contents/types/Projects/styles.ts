@@ -15,14 +15,14 @@ export const Container = styled.div`
   .SliderContainer,
   .slick-list,
   .slick-track {
-    height: 95%;
+    height: 100%;
     width: 100%;
   }
 `;
 
 export const Content = styled.div<ContentProps>`
   display: grid !important;
-  grid-template-rows: 500px min-content;
+  grid-template-rows: 300px min-content 25px;
   grid-row-gap: 10px;
   justify-content: center;
 
@@ -36,7 +36,6 @@ export const Content = styled.div<ContentProps>`
   }
 
   img {
-    width: 80%;
     max-width: 100%;
     max-height: 80%;
   }
@@ -58,4 +57,8 @@ export const TextContainer = styled.div`
   h2 {
     margin: 15px;
   }
+`;
+
+export const LinksContainer = styled.div`
+  width: 100%;
 `;

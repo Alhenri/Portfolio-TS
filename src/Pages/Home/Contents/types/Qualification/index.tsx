@@ -1,21 +1,24 @@
-import React from 'react';
-import { Container, Card } from './styles';
-import data from './data'
+import React from "react";
+import { Container, Card } from "./styles";
+import data from "./data";
 
 const Qualification: React.FC = () => {
   return (
     <Container className="Qualification">
-      {data.map(value => (
+      {data.map((value) => (
         <Card backGroundColor={value.backGroundColor}>
-          <div>
+          <div className="image-container">
             <img src={value.img} alt="img" />
           </div>
-          {value.lines.map(text => <p>{text}</p>)}
+          <div className="text-container">
+            {value.lines.map((text) => (
+              <p>{text}</p>
+            ))}
+          </div>
         </Card>
-        )
-      )}
+      ))}
     </Container>
-  )
-}
+  );
+};
 
 export default Qualification;

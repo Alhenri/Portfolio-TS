@@ -5,7 +5,17 @@ const data = [
   {
     title: 'E-recycle',
     img: 'https://media.giphy.com/media/GQwRL4GkTwW2OGfwWH/giphy.gif',
-    lines: ['Projeto inspirando na primeira NLW mas que estou criando no momento. O site está em desenvolvimento, mas a ideia principal é que ele seja uma interface onde será possivel cadastrar/encontrar pontos de coleta próximo a você']
+    lines: ['Projeto inspirando na primeira NLW mas que estou criando no momento. O site está em desenvolvimento, mas a ideia principal é que ele seja uma interface onde será possivel cadastrar/encontrar pontos de coleta próximo a você'],
+    links: [
+      {
+        icon: 'github',
+        url: 'https://github.com/Alhenri/E-Recycling'
+      },
+      {
+        icon: 'external_link',
+        url: 'https://e-recycling.vercel.app/'
+      }
+    ]
   },
   {
     title: 'Inspect App',
@@ -13,6 +23,16 @@ const data = [
     lines: [
       'Esse projeto foi criado a fim de testar a minha capacidade de criação de interfaces no processo seletivo de estágio da Tracking Trade usando o TypeScript (meu primeiro contato com a linguagem), ReactJS, styled-components, React Hooks, e Context-API.',
     ],
+    links: [
+      {
+        icon: 'github',
+        url: 'https://github.com/Alhenri/InspectApp'
+      },
+      {
+        icon: 'external_link',
+        url: 'https://inspect-app.vercel.app/'
+      }
+    ]
   },
   {
     title: 'Weather app',
@@ -20,6 +40,16 @@ const data = [
     lines: [
       'O site tem a principal função de checar informações sobre o clima de qualquer local que desejar. Há duas formas de selecionar um local, pela sua localização ou por um mapa. O local pesquisado fica salvo no navegador para consultas posteriores, podendo ser editado ou excluido.',
     ],
+    links: [
+      {
+        icon: 'github',
+        url: 'https://github.com/Alhenri/WeatherApp'
+      },
+      {
+        icon: 'external_link',
+        url: 'https://weather-app-eight-taupe.vercel.app/'
+      }
+    ]
   },
   {
     title: 'Projeto de hardware e educação',

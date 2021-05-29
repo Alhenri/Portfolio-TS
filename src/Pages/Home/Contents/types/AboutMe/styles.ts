@@ -4,10 +4,14 @@ export const Container = styled.div`
   height: 100%;
   width: 80%;
   display: grid;
-  grid-template-rows: 350px auto;
+  grid-template-rows: 300px auto;
   border-radius: 25px;
   align-self: center;
   background-color: rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 500px){
+    grid-template-rows: 200px auto;  
+  }
 `;
 
 export const TextArea = styled.div`
@@ -25,7 +29,7 @@ export const ImageArea = styled.div`
   align-items: center;
   justify-content: center;
   img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
   }
 `;
