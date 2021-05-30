@@ -22,8 +22,8 @@ const Qualification: React.FC = () => {
 
   return (
     <Container className="Qualification">
-      {data.map((value) => (
-        <Card backGroundColor={value.backGroundColor}>
+      {data.map((value, index) => (
+        <Card key={index} index={index} backGroundColor={value.backGroundColor}>
           <div className="image-container">
             <img src={value.img} alt="img" />
           </div>

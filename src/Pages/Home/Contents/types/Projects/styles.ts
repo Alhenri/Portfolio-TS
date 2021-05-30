@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { arrive } from '../../../../../styles/animations';
 
 interface ContentProps {
   width: number;
@@ -11,6 +12,7 @@ export const Container = styled.div`
   border-radius: 25px;
   align-self: center;
   background-color: rgba(255, 255, 255, 0.1);
+  animation: ${arrive()} 1s 1;
 
   .SliderContainer,
   .slick-list,

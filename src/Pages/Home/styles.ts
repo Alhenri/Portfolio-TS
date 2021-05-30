@@ -30,6 +30,7 @@ export const TitleMenu = styled.div`
   font-size: 24px;
   @media (max-width: 650px){
     line-height: 100px;
+    font-size: 18px;
   }
 `;
 
@@ -60,6 +61,10 @@ export const TitleArea = styled.div`
   font-size: 32px;
   padding-left: 15px;
   line-height: 60px;
+
+  @media (max-width: 650px){
+    font-size: 24px;
+  }
 `;
 
 export const ContentArea = styled.div`
