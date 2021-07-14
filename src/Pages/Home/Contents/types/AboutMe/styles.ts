@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { arrive } from '../../../../../styles/animations';
+import { arrive, glitch } from '../../../../../styles/animations';
 
 export const Container = styled.div`
   height: 100%;
@@ -23,6 +23,7 @@ export const TextArea = styled.div`
   p {
     max-width: 800px;
     margin: 15px;
+    animation: ${glitch} 500ms infinite;
   }
 `;
 

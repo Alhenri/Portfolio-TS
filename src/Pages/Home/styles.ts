@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {glitch} from '../../styles/animations';
 
 export const Container = styled.div`
   height: 100%;
@@ -28,7 +29,9 @@ export const Menu = styled.div`
 export const TitleMenu = styled.div`
   text-align: center;
   font-size: 24px;
-  @media (max-width: 650px){
+  font-weight: 700;
+  animation: ${glitch} 500ms infinite;
+  @media (max-width: 650px) {
     line-height: 100px;
     font-size: 18px;
   }
@@ -61,8 +64,8 @@ export const TitleArea = styled.div`
   font-size: 32px;
   padding-left: 15px;
   line-height: 60px;
-
-  @media (max-width: 650px){
+  animation: ${glitch} 500ms infinite;
+  @media (max-width: 650px) {
     font-size: 24px;
   }
 `;

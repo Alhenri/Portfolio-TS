@@ -24,24 +24,24 @@ const Home: React.FC = () => {
         <ListMenu>
           <Button 
             name="Sobre mim"
-            color="#333" 
-            bg="#16d8ff"
+            color="#ffffff" 
+            bg="#1d7bd37d"
             selected={selectedContent === 'about_me'}
             onClick={()=> setSelectedContent('about_me')}
             style={{margin: '5px 0'}}
           />
           <Button 
             name="Projetos"
-            color="#333" 
-            bg="#16d8ff"
+            color="#fff" 
+            bg="#1d7bd3"
             selected={selectedContent === 'projects'} 
             onClick={()=> setSelectedContent('projects')}
             style={{margin: '5px 0'}}
           />
           <Button 
             name="Qualificação"
-            color="#333" 
-            bg="#16d8ff"
+            color="#fff" 
+            bg="#1d7bd3"
             selected={selectedContent === 'qualification'}
             onClick={()=> setSelectedContent('qualification')}
             style={{margin: '5px 0'}}

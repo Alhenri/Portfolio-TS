@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { arrive } from '../../../../../styles/animations';
+import { arrive, glitch } from '../../../../../styles/animations';
 
 interface ContentProps {
   width: number;
@@ -58,6 +58,7 @@ export const TextContainer = styled.div`
   p,
   h2 {
     margin: 15px;
+    animation: ${glitch} 500ms infinite;
   }
 `;
 

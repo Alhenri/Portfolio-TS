@@ -12,14 +12,9 @@ export default createGlobalStyle`
     font-size: 14px;
     color: aliceblue;
 
-    background: linear-gradient(
-      45deg,
-      rgba(14, 11, 22, 1) 21%,
-      rgba(162, 57, 202, 1) 53%,
-      rgba(71, 23, 246, 1) 100%
-    );
+    background: linear-gradient(71deg, rgba(41,2,125,1) 0%, rgba(132,16,158,1) 56%, rgba(31,26,26,1) 100%);
     background-size: 200% 200%;
-    animation: ${backgroundAnimation} 15s ease infinite;
+    animation: ${backgroundAnimation} 10s ease infinite;
   }
   #root {
     margin: 0;
