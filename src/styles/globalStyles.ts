@@ -31,9 +31,11 @@ export default createGlobalStyle`
   }
   body {
     overflow: hidden auto;
+    max-height: 100vh;
+    max-width: 100vw;
   }
   #root {
-    min-height: 700px;
+    min-height: 760px;
   }
 
   ::-webkit-scrollbar {

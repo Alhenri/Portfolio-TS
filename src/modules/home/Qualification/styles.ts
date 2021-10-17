@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const Card = styled.div<CardProps>`
   width: 100%;
   display: grid;
-  grid-template-rows: 200px auto;
+  grid-template-rows: 150px auto;
   grid-row-gap: 10px;
   max-width: 800px;
   margin: 15px 0;
