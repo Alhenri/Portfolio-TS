@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 
-import getContent from './Contents'
+import getContent from '../../modules/home'
 
 import { Container, GridContent, Menu, ContentArea, TitleArea, FooterArea, TitleMenu, ListMenu } from './styles';
 

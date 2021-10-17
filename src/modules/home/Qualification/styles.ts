@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { arrive } from '../../../../../styles/animations';
+import { arrive } from '../../../styles/animations';
 
 interface CardProps {
   backGroundColor?: string;

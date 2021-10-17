@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { arrive, glitch } from '../../../../../styles/animations';
+import { arrive, glitch } from '../../../styles/animations';
 
 interface ContentProps {
   width: number;

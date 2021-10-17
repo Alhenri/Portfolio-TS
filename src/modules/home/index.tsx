@@ -1,7 +1,7 @@
-import { ContentProps } from './interfaces'
-import AboutMe from './types/AboutMe'
-import Qualification from './types/Qualification'
-import Projects from './types/Projects'
+import { ContentProps } from '../interfaces'
+import AboutMe from './AboutMe'
+import Qualification from './Qualification'
+import Projects from './Projects'
 
 
 function getContent(type: string): ContentProps {
